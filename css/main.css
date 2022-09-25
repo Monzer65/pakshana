@@ -260,5 +260,6 @@ span{
    @media (max-width:600px) {
      #logo_text{
     padding: 2px 2px 0 2px;
+    font-size:smaller;
    }
    }
