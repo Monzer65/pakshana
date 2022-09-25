@@ -1,0 +1,274 @@
+
+body {
+  font-family: Shabnam;
+  font-weight:normal;
+  }
+
+body { padding: 1rem; }
+
+  @font-face {
+    font-family: Shabnam;
+    src: 
+    url('fonts/Shabnam.eot')  format('eot'),
+    url('fonts/Shabnam.woff2') format('woff2'), 
+    url('fonts/Shabnam.woff') format('woff'), 
+    url('fonts/Shabnam.ttf') format('truetype');
+   }
+
+#logo
+{
+  height: 200px;
+  background: #8C0015 url(Untitled.png) no-repeat;
+  padding: 10px 0 10px 10px;
+}
+
+#logoex{
+  padding-left: 2px;
+}
+
+#logo_text{
+  padding-top: 52px;
+  color: white;
+  text-align: center;
+  width: 60%;
+}
+
+/*شروع منوی همبرگر و هدر*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #717171;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-branding img{
+  height: 46px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar li{
+  list-style: none;
+}
+
+.navbar a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: rgb(42, 44, 172);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+/*اتمام منوی همبرگر و هدر*/
+
+/*شروع محصولات*/
+
+.main-content {
+  background: url("../images/Background.png") center no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+
+.products-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.title{
+  font-family: Shabnam;
+  font-size: 32px;
+  color: #571f1f;
+  padding: 16px 0 16px 0;
+  text-align: center;
+}
+
+
+span{
+  background: #FFF;
+}
+
+
+.products__item {
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.products-item__title {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Shabnam', cursive;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.products-item__title_1 {
+  margin-top: 35px;
+}
+
+.products-item__subtitle {
+  
+  margin-bottom: 35px;
+  max-width: 340px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'shabnam', sans-serif;
+  line-height: 1.25;
+}
+
+.btn__pop-up-open {
+  border: none;
+  cursor: pointer;
+  padding: 10px 50px;
+  color: white;
+  background: #bf2222;
+  font-size: 16px;
+  font-family: 'Shabnam', cursive;
+  text-transform: uppercase;
+  line-height: 2.25;
+}
+
+/*پایان محصولات*/
+
+
+#footer
+{ width: 100%;
+  font: normal 100% 'lucida sans unicode', shabnam;
+  height: 100%;
+  padding: 24px 0 22px 0;
+  text-align: center;
+  background: #8C0015;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;}
+
+#footer a
+{ color: #FFF;
+  text-decoration: none;}
+
+#footer a:hover
+{ color: #FFF;
+  text-decoration: underline;}
+
+  #hoghoogh{
+    font-size: smaller;
+    color: aquamarine;
+  }
+
+
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+  }
+  
+
+@media (max-width:768px) {
+
+  #logo_text{
+    padding: 10px 20px 0 10px;
+    color: white;
+    text-align: right;
+    width: auto;
+  }
+
+  .hamburger{
+    display: block;
+    z-index: 2;
+  }
+  
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position: absolute;
+    right: -100%;
+    top: 168px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #3d3838;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    right: 0;
+  }
+
+  }
+
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  
