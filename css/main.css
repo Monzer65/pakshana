@@ -259,8 +259,8 @@ span{
 
   @media (max-width: 480px) {
     #logo_text{
-     Padding-top: 27px;
-     Text-size: 32px;
+     Padding-top: 5px;
+     Font-size: 32px;
     }
-  }
+   }
   
