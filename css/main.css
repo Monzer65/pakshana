@@ -101,7 +101,6 @@ header{
 /*اتمام منوی همبرگر و هدر*/
 
 /*شروع محصولات*/
-
 .main-content {
   background: url("../images/Background.png") center no-repeat;
   background-size: cover;
@@ -129,11 +128,9 @@ header{
   text-align: center;
 }
 
-
 span{
   background: #FFF;
 }
-
 
 .products__item {
   height: 580px;
@@ -187,9 +184,7 @@ span{
   text-transform: uppercase;
   line-height: 2.25;
 }
-
 /*پایان محصولات*/
-
 
 #footer
 { width: 100%;
@@ -213,13 +208,7 @@ span{
   #hoghoogh{
     font-size: smaller;
     color: aquamarine;
-  }
-
-
-  @media (min-width: 900px) {
-    .cards { grid-template-columns: repeat(4, 1fr); }
-  }
-  
+ }
 
 @media (max-width:768px) {
 
@@ -268,7 +257,10 @@ span{
 
   }
 
-  @media (min-width: 600px) {
-    .cards { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 480px) {
+    #logo_text{
+     Padding-top: 27px;
+     Text-size: 32px;
+    }
   }
   
