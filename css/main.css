@@ -1,12 +1,4 @@
-
-body {
-  font-family: Shabnam;
-  font-weight:normal;
-  }
-
-body { padding: 1rem; }
-
-  @font-face {
+@font-face {
     font-family: Shabnam;
     src: 
     url('fonts/Shabnam.eot')  format('eot'),
@@ -14,6 +6,11 @@ body { padding: 1rem; }
     url('fonts/Shabnam.woff') format('woff'), 
     url('fonts/Shabnam.ttf') format('truetype');
    }
+body {
+  font-family: Shabnam;
+  font-weight:normal;
+  }
+body { padding: 1rem; }
 
 #logo
 {
@@ -115,7 +112,7 @@ header{
   justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
