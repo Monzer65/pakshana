@@ -49,8 +49,18 @@
     .card p {
       color: #555;
     }
-  </style>
-
+      .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin: 2rem;
+  }
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
     .section {
       padding: 4rem 0;
       background-color: #f9f9f9;
@@ -78,33 +88,30 @@
     </div>
   </div>
   
-  <section class="section">
-    <h2>معرفی خودرو</h2>
-    <p>
-      خودروی ب‌ام‌و مدل 2023 با طراحی مدرن و قدرتمندی که با سرعتی به میزان 310 کیلومتر در ساعت می‌تواند به سرعت برسد. این خودرو با قدرت 250 اسب بخار نیز از جمله خودروهای پرقدرت محسوب می‌شود.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>گالری عکس‌ها</h2>
-    <div class="image-gallery">
-      <img src="https://www.netcarshow.com/BMW-M3_CS-2024-1024-18.jpg" alt="Image 1" />
-      <img src="https://www.netcarshow.com/BMW-M760e_xDrive-2023-1024-15.jpg" alt="Image 2" />
-      <img src="https://www.netcarshow.com/BMW-8-Series_Convertible-2023-1024-0c.jpg" alt="Image 3" />
-      <!-- Add more images here -->
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>مشخصات فنی</h2>
-    <ul>
-      <li>قدرت: 250 اسب بخار</li>
-      <li>سرعت حداکثر: 310 کیلومتر در ساعت</li>
-      <li>رنگ: آبی</li>
-      <li>مدل: 2023</li>
-      <!-- Add more technical specifications here -->
-    </ul>
-  </section>
+ <section class="section">
+  <h2>گالری عکس‌ها</h2>
+  <div class="image-gallery">
+    <img src="https://www.netcarshow.com/BMW-M3_CS-2024-1024-18.jpg" alt="Image 1" />
+    <img src="https://www.netcarshow.com/BMW-M760e_xDrive-2023-1024-15.jpg" alt="Image 2" />
+    <img src="https://www.netcarshow.com/BMW-8-Series_Convertible-2023-1024-0c.jpg" alt="Image 3" />
+    <img src="https://www.netcarshow.com/BMW-i8_Roadster_Edition_Sophisto_Grey-2023-1024-0a.jpg" alt="Image 4" />
+    <img src="https://www.netcarshow.com/BMW-X5_M_Competition-2023-1024-0b.jpg" alt="Image 5" />
+    <img src="https://www.netcarshow.com/BMW-Z4_M40i_First_Edition-2023-1024-0d.jpg" alt="Image 6" />
+  </div>
+</section>
+<section class="section">
+  <h2>مشخصات فنی</h2>
+  <ul>
+    <li>قدرت: 250 اسب بخار</li>
+    <li>سرعت حداکثر: 310 کیلومتر در ساعت</li>
+    <li>رنگ: آبی</li>
+    <li>مدل: 2023</li>
+    <li>نوع موتور: توربوشارژ شده با حجم سیلندر 3 لیتر</li>
+    <li>نوع دنده: اتوماتیک با هفت سرعت</li>
+    <li>مصرف سوخت: 9.5 لیتر در هر صد کیلومتر</li>
+    <li>قیمت: تقریباً دو میلیارد تومان</li>
+  </ul>
+</section>
 
   <footer>
     <p>&copy; 2023 محمد مرادخانی. تمامی حقوق محفوظ است.</p>
